@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.DetalleUsuario">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Innovation.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.Innovation.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <!-- <include layout="@layout/content_detalle_usuario" /> -->
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconfinder_male3_403019"
+            android:contentDescription="@string/imagen_de_camara"
+            android:paddingTop="50dp" />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingStart="10dp"
+            android:text="Nombre: " />
+
+        <TextView
+            android:id="@+id/tv_nombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/tv_nombre"
+            android:text="Arcadio" />
+
+        <TextView
+            android:id="@+id/tv_edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nombre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:text="Edad: " />
+
+        <TextView
+            android:id="@+id/tv_edad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nombre1"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/tv_edad"
+            android:text="27" />
+
+        <TextView
+            android:id="@+id/tv_salario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_edad"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Salario: " />
+
+        <TextView
+            android:id="@+id/tv_salario1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_edad1"
+            android:layout_toEndOf="@+id/tv_salario"
+
+            android:textSize="20sp"
+            android:text="100000" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_salario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:text="@string/id_" />
+
+        <TextView
+            android:id="@+id/tv_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_salario1"
+            android:layout_toEndOf="@+id/tv_id"
+            android:textSize="20sp"
+            android:text="100000" />
+
+    </RelativeLayout>
+</layout>
